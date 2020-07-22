@@ -31,6 +31,13 @@ end
 def hit?(current_total)
   prompt_user
   next_move = get_user_input
+  if next_move == 'h'
+    current_total += deal_card
+  end
+  if next_move != ('s' || 'h')
+    invalid_command
+  end
+  current_total
 end
 
 def invalid_command
