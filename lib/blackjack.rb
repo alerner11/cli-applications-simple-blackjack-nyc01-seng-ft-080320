@@ -51,6 +51,11 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  card_total = initial_round
+  new_total = card_total
+  while new_total === (card_total)
+    new_total = hit?(card_total)  
+  end
 end
     
