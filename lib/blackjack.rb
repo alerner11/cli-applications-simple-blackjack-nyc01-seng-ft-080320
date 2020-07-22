@@ -36,6 +36,7 @@ def hit?(current_total)
   end
   if next_move != ('s' || 'h')
     invalid_command
+    prompt_user
   end
   current_total
 end
