@@ -34,7 +34,7 @@ def hit?(current_total)
   if next_move == 'h'
     current_total += deal_card
   end
-  if next_move != ('s' || 'h')
+  if next_move != 's' && next_move!= 'h'
     invalid_command
     prompt_user
   end
