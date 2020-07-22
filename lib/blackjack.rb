@@ -55,9 +55,7 @@ def runner
   card_total = initial_round
   new_total = card_total
   while new_total <= 21
-    puts "ran while"
     if new_total === card_total
-      puts "ran if"
       new_total = hit?(card_total)  
     end
     display_card_total(new_total)
